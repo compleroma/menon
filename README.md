@@ -1,77 +1,78 @@
-# menon
-Em C com GTK e GLib, apresento o "Menon", um menu de aplicativos leve para Linux. Ele gerencia o ciclo de vida da interface, busca assíncrona, fixação de apps (pinning) e histórico de recentes. Foca em eficiência através de cache dinâmico, multithreading para I/O e personalização via CSS para uma experiência fluida.
-Aqui está uma proposta de **README.md** profissional, estilizado e focado nos diferenciais competitivos do **Menon** frente ao Whisker Menu.
+# Menon
+Written in C with GTK and GLib, I present "Menon", a lightweight application menu for Linux. It manages interface lifecycle, asynchronous search, app pinning, and recent history. It focuses on efficiency through dynamic caching, multithreaded I/O, and CSS customization for a fluid experience.
+
+Here is a professional, stylized **README.md** proposal focusing on **Menon's** competitive advantages over the Whisker Menu.
 
 ---
 
 # 🚀 Menon
 
-**A alternativa de alta performance ao Whisker Menu.**
+**The high-performance alternative to Whisker Menu.**
 
-O **Menon** é um lançador de aplicações para Linux (especialmente otimizado para XFCE) escrito em C puro e GTK. Ele foi projetado para usuários que buscam o equilíbrio perfeito entre o **minimalismo estético do Windows 11** e a **eficiência bruta do Unix**.
+**Menon** is an application launcher for Linux (specifically optimized for XFCE) written in pure C and GTK. It was designed for users seeking the perfect balance between **Windows 11 aesthetic minimalism** and **raw Unix efficiency**.
 
-![Licença](https://img.shields.io/badge/license-GPLv3-blue.svg)
-![Linguagem](https://img.shields.io/badge/language-C-orange.svg)
+![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
+![Language](https://img.shields.io/badge/language-C-orange.svg)
 ![Toolkit](https://img.shields.io/badge/toolkit-GTK3-green.svg)
 
 ---
 
-## 🔥 Por que escolher o Menon?
+## 🔥 Why choose Menon?
 
-Embora o Whisker Menu seja um clássico, o Menon foi construído com foco em hardware moderno e fluxos de trabalho que exigem velocidade instantânea.
+While Whisker Menu is a classic, Menon was built with a focus on modern hardware and workflows that demand instantaneous speed.
 
-### ⚡ 25% Mais Leve
-Graças à sua arquitetura em C nativo e gestão de memória rigorosa, o Menon consome, em média, **25% menos recursos (RAM/CPU)** que o Whisker Menu tradicional. 
-- **Zero Interpretadores:** Sem Python, sem JS. Apenas código compilado.
-- **I/O Assíncrono:** O menu nunca "engasga" ao carregar ícones, pois o disco é lido em threads separadas.
+### ⚡ 25% Lighter
+Thanks to its native C architecture and rigorous memory management, Menon consumes, on average, **25% fewer resources (RAM/CPU)** than the traditional Whisker Menu.
+- **Zero Interpreters:** No Python, no JS. Just compiled code.
+- **Asynchronous I/O:** The menu never "stutters" while loading icons, as the disk is read in separate threads.
 
-### 🎨 Estética "Next-Gen" (Windows 11 Inspired)
-Diga adeus aos menus datados. O Menon traz uma interface inspirada no design fluido e centralizado do Windows 11:
-- **Cantos Arredondados & Sombras Suaves:** Visual moderno que se integra a qualquer tema GTK atual.
-- **Painel Lateral de Favoritos (Pins):** Seus apps essenciais sempre visíveis, como no menu Iniciar moderno.
-- **Customização via CSS:** Altere cores, transparências e espaçamentos sem tocar no código-fonte.
-
----
-
-## ✨ Funcionalidades Principais
-
-- **Busca Debounced:** A pesquisa só é disparada quando você para de digitar por milissegundos, economizando processamento.
-- **Sistema de Pinning:** Fixe e desafixe aplicativos com um clique direito.
-- **Histórico Inteligente:** O Menon aprende quais apps você mais usa e os coloca em destaque.
-- **Segurança e Estabilidade:** Implementação de `RWLocks` (Read-Write Locks) para garantir que seus dados nunca sejam corrompidos durante o uso.
-- **Integração Desktop:** Adicione atalhos à área de trabalho ou ao painel diretamente pelo menu de contexto.
+### 🎨 "Next-Gen" Aesthetic (Windows 11 Inspired)
+Say goodbye to dated menus. Menon brings an interface inspired by the fluid and centralized design of Windows 11:
+- **Rounded Corners & Soft Shadows:** A modern look that integrates with any current GTK theme.
+- **Favorites Side Panel (Pins):** Your essential apps are always visible, just like the modern Start menu.
+- **CSS Customization:** Change colors, transparency, and spacing without touching the source code.
 
 ---
 
-## 🛠 Instalação (Build rápido)
+## ✨ Key Features
 
-**Dependências:** `gtk+-3.0`, `gio-2.0`, `pango`.
+- **Debounced Search:** Search is only triggered milliseconds after you stop typing, saving processing power.
+- **Pinning System:** Pin and unpin applications with a simple right-click.
+- **Smart History:** Menon learns which apps you use most and highlights them.
+- **Safety and Stability:** Implementation of `RWLocks` (Read-Write Locks) to ensure your data is never corrupted during use.
+- **Desktop Integration:** Add shortcuts to the desktop or panel directly through the context menu.
+
+---
+
+## 🛠 Installation (Quick Build)
+
+**Dependencies:** `gtk+-3.0`, `gio-2.0`, `pango`.
 
 ```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/menon.git
+# Clone the repository
+git clone https://github.com/your-user/menon.git
 
-# Entre na pasta
+# Enter the folder
 cd menon
 
-# Compile o projeto
+# Compile the project
 gcc -o menon main.c ui.c core.c pinned.c `pkg-config --cflags --libs gtk+-3.0`
 
-# Execute
+# Run
 ./menon
 ```
 
 ---
 
-## 💡 Filosofia do Projeto
+## 💡 Project Philosophy
 
-O **Menon** não tenta ser um canivete suíço. Ele foi criado com um único propósito: **ser o caminho mais rápido e bonito entre o seu pensamento e a abertura do programa.** > "Se você pode sentir o menu abrindo, ele ainda não é rápido o suficiente."
-
----
-
-## 📄 Licença
-
-Distribuído sob a licença **GPLv3** (Proteção total ao código aberto). Veja `LICENSE` para mais detalhes.
+**Menon** doesn't try to be a Swiss Army knife. It was created with a single purpose: **to be the fastest and most beautiful path between your thought and opening a program.** > "If you can feel the menu opening, it’s not fast enough yet."
 
 ---
-*Desenvolvido com ❤️ para a comunidade Linux.*
+
+## 📄 License
+
+Distributed under the **GPLv3** license (Full open-source protection). See `LICENSE` for more details.
+
+---
+*Developed with ❤️ for the Linux community.*
