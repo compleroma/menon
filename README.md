@@ -1,8 +1,6 @@
 # Menon
 Written in C with GTK and GLib, I present "Menon", a lightweight application menu for Linux. It manages interface lifecycle, asynchronous search, app pinning, and recent history. It focuses on efficiency through dynamic caching, multithreaded I/O, and CSS customization for a fluid experience.
 
-Here is a professional, stylized **README.md** proposal focusing on **Menon's** competitive advantages over the Whisker Menu.
-
 ---
 
 # 🚀 Menon
@@ -30,7 +28,6 @@ Thanks to its native C architecture and rigorous memory management, Menon consum
 
 ### 🎨 "Next-Gen" Aesthetic (Windows 11 Inspired)
 Say goodbye to dated menus. Menon brings an interface inspired by the fluid and centralized design of Windows 11:
-- **Rounded Corners & Soft Shadows:** A modern look that integrates with any current GTK theme.
 - **Favorites Side Panel (Pins):** Your essential apps are always visible, just like the modern Start menu.
 - **CSS Customization:** Change colors, transparency, and spacing without touching the source code.
 
