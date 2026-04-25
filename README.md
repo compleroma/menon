@@ -6,7 +6,8 @@ Here is a professional, stylized **README.md** proposal focusing on **Menon's** 
 ---
 
 # 🚀 Menon
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e97b5b12-4782-4b6b-9c6c-487caac5bfaa" />
+
+<img width="785" height="757" alt="Captura de tela_2026-04-25_01-42-44 (1)" src="https://github.com/user-attachments/assets/9029caac-1485-421c-9d6c-af6751c35fbf" />
 
 **The high-performance alternative to Whisker Menu.**
 
