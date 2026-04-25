@@ -1,3 +1,10 @@
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/cb9f1705-e6e0-4472-bc25-ace00933ae07" width="101" height="107" alt="Pleroma (1)"></td>
+    <td><strong>byPleroma</strong></td>
+  </tr>
+</table>
+
 # Menon
 Written in C with GTK and GLib, I present "Menon", a lightweight application menu for Linux. It manages interface lifecycle, asynchronous search, app pinning, and recent history. It focuses on efficiency through dynamic caching, multithreaded I/O, and CSS customization for a fluid experience.
 
